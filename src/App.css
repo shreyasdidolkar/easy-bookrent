@@ -1,0 +1,93 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.navbar {
+  background: #333;
+  color: white;
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar button {
+  background: transparent;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  color: #ddd;
+}
+
+.home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 40px;
+}
+
+.home p {
+  font-size: 18px;
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #ccc;
+}
+
+.image {
+  background: #e8f0ff;
+  font-size: 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin-bottom: 5px;
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
