@@ -1,9 +1,11 @@
-function Navbar({ setPage }) {
+function Navbar({ setPage, darkMode, setDarkMode }) {
   return (
     <nav className="navbar">
-      <h1>EasyRent</h1>
 
-      <div>
+      <h1>🏠 EasyRent</h1>
+
+      <div className="nav-links">
+
         <button onClick={() => setPage("home")}>
           Home
         </button>
@@ -11,9 +13,18 @@ function Navbar({ setPage }) {
         <button onClick={() => setPage("properties")}>
           Properties
         </button>
+
+        <button
+          className="theme-btn"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? "☀️ Light" : "🌙 Dark"}
+        </button>
+
       </div>
+
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

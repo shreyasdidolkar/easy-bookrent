@@ -1,6 +1,13 @@
-function Card({ item, onRent }) {
+function Card({ item, onRent, isFavorite, onFavorite }) {
   return (
     <div className="card">
+
+      <button
+        className="favorite"
+        onClick={() => onFavorite(item.id)}
+      >
+        {isFavorite ? "❤️" : "🤍"}
+      </button>
 
       <div className="image">
         🏠
@@ -8,16 +15,21 @@ function Card({ item, onRent }) {
 
       <h2>{item.name}</h2>
 
-      <p>{item.location}</p>
+      <p>📍 {item.location}</p>
 
-      <h3>₹{item.price} / day</h3>
+      <h3>
+        ₹{item.price.toLocaleString("en-IN")} / day
+      </h3>
 
-      <button onClick={() => onRent(item)}>
+      <button
+        className="rent-btn"
+        onClick={() => onRent(item)}
+      >
         Rent Now
       </button>
 
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;
